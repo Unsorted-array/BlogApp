@@ -22,15 +22,15 @@
 
 # Putting C in crud
 
-  *Adding a new route
-  *Adding a new show template
-  *Adding create route
-  *Adding create template
+  * Adding a new route
+  * Adding a new show template
+  * Adding create route
+  * Adding create template
 
 
 # Show Pages Design
 
-  *Adding  a show route
-  *Adding show template
-  *Adding links
-  *styling show page
+  * Adding  a show route
+  * Adding show template
+  * Adding links
+  * styling show page
