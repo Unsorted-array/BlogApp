@@ -6,10 +6,10 @@
   * All seven RESTFUL routes
 
 
-# Blog App
+## Blog App
 
-    * created index and home routes
-    * created blog model
+    * Created index and home routes
+    * Created blog model
     * Added index routed and rendered the page
 
 
