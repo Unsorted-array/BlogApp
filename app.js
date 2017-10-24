@@ -86,7 +86,24 @@ app.post("/blogs",function (req,res) {
 })
 
 
+// show route
 
+app.get("/blogs/:id",function (req,res) {
+
+    blog.findById(req.params.id,function (err,foundBlog) {
+        if(err)
+        {
+            res.render("new");
+        }
+        else
+        {
+            res.render("show",{blog:foundBlog})
+        }
+
+    })
+
+
+})
 
 app.listen(12000,function () {
     console.log("server is running")

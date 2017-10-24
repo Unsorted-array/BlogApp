@@ -5,11 +5,13 @@
 
 <%blogs.forEach(function (blog) { %>
 
-    <div class="ui main text container">
+    <div class="ui main text container segment ">
         <h2> <%= blog.title%></h2>
         <img src= <%= blog.image%> >
-        <span> <%= blog.Created %></span>
+        <span> <%= blog.Created.toDateString()%></span>
         <p><%=blog.body%></p>
+
+        <a href="/blogs/<%=blog._id%>"> Read More</a>
 
 
 

@@ -1,4 +1,4 @@
-#Restful Routing
+# Restful Routing
 
 ## Introduction
 
@@ -6,14 +6,14 @@
   * All seven RESTFUL routes
 
 
-#Blog App
+# Blog App
 
     * created index and home routes
     *created blog model
     * Added index routed and rendered the page
 
 
-#Basic Layout
+# Basic Layout
 
     * Added headers and footer partials
     * Use semantic UI
@@ -28,7 +28,7 @@
   * Adding create template
 
 
-#Show Pages Design
+# Show Pages Design
 
   *Adding  a show route
   * Adding show template
