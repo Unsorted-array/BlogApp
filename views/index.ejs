@@ -1,0 +1,22 @@
+<% include ./partials/header.ejs%>
+
+
+
+
+<%blogs.forEach(function (blog) { %>
+
+    <div class="ui main text container">
+        <h2> <%= blog.title%></h2>
+        <img src= <%= blog.image%> >
+        <span> <%= blog.Created %></span>
+        <p><%=blog.body%></p>
+
+
+
+    </div>
+
+
+<%})%>
+
+
+<% include ./partials/footer.ejs %>
