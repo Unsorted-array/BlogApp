@@ -9,7 +9,7 @@
 # Blog App
 
     * created index and home routes
-    *created blog model
+    * created blog model
     * Added index routed and rendered the page
 
 

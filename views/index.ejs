@@ -9,7 +9,9 @@
         <h2> <%= blog.title%></h2>
         <img src= <%= blog.image%> >
         <span> <%= blog.Created.toDateString()%></span>
-        <p><%=blog.body%></p>
+        <p><% var body =  blog.body ;%>
+            <%= body.substring(0,50)%>...
+        </p>
 
         <a href="/blogs/<%=blog._id%>"> Read More</a>
 
