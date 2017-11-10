@@ -1,28 +1,76 @@
 <% include ./partials/header.ejs%>
 
 
+<div class="ui main container">
+
+    <div class="ui huge header ">Blog App
+
+    </div>
+
+    <div class="ui top attached segment ">
+
+        <%blogs.forEach(function (blog) { %>
+        <div class="ui divided item ">
+
+            <div class="ui main text container segment ">
 
 
-<%blogs.forEach(function (blog) { %>
+                     <div class="item">
+                         <div class="content">
 
-    <div class="ui main text container segment ">
-        <h2> <%= blog.title%></h2>
-        <img src= <%= blog.image%> >
-        <span> <%= blog.Created.toDateString()%></span>
-        <p><% var body =  blog.body ;%>
-            <%= body.substring(0,50)%>...
-        </p>
+                                <a class="ui header" href="/blogs/<%=blog._id%>"> <%= blog.title%>  </a>
 
-        <a href="/blogs/<%=blog._id%>"> Read More</a>
+                                <div class=" meta">
+
+                                    <span> <%= blog.Created.toDateString()%></span>
 
 
+                                </div>
+                         </div>
+                         <div class="image">
+
+                             <img src= <%= blog.image%> >
+
+                         </div>
 
 
+                         <div class="description">
+                                <p>
+                                    <%- blog.body.substring(0,100)%>...
+                                </p>
+
+
+
+                         </div>
+
+                         <div class="extra">
+
+                             <a class="ui floated basic button " href="/blogs/<%=blog._id%>"> <%= blog.title%>Read More</a>
+
+                                <i class=" right chevron icon "></i>
+
+
+
+                         </div>
+                     </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        <%})%>
 
     </div>
 
 
-<%})%>
+
+
+
+
+</div>
 
 
 <% include ./partials/footer.ejs %>

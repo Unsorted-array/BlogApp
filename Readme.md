@@ -56,5 +56,11 @@
     * Delete a blog
     * Redirect to some page
 
+## Final Updates
+
+ * Adding  a show route
+ * Adding show template
+ * Adding links
+ * styling show page
 
 
