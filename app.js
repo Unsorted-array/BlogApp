@@ -1,5 +1,6 @@
 var express = require('express'),
      app = express(),
+    methodOverride = require("method-override"),
     bodyParser= require('body-parser'),
     mongoose=require('mongoose');
 
@@ -10,7 +11,7 @@ app.set("view engine","ejs");
 
 // static pages served
 app.use(express.static(__dirname + '/public'));
-
+app.use(methodOverride("_method"))
 
 app.use(bodyParser.urlencoded({extended:true }));
 
@@ -104,6 +105,60 @@ app.get("/blogs/:id",function (req,res) {
 
 
 })
+
+
+app.get("/blogs/:id/edit",function (req,res) {
+
+    blog.findById(req.params.id,function (err,foundBlog) {
+        if(err)
+        {
+            res.render("new");
+        }
+        else
+        {
+            res.render("edit",{blog:foundBlog})
+        }
+
+    })
+
+})
+
+
+app.put("/blogs/:id",function (req,res) {
+
+
+    blog.findByIdAndUpdate(req.params.id,req.body.Blog,function (err,updateblog) {
+
+        if(err)
+        {
+            res.redirect("/blogs");
+        }
+        else
+        {
+            res.redirect("/blogs/" +req.params.id);
+        }
+
+    });
+})
+
+
+app.delete("/blogs/:id",function (req,res) {
+
+
+    blog.findByIdAndRemove(req.params.id,function (err) {
+
+        if(err)
+        {
+            res.send("error");
+        }
+        else
+        {
+            res.redirect("/blogs/");
+        }
+
+    });
+})
+
 
 app.listen(12000,function () {
     console.log("server is running")

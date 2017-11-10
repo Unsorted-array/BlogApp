@@ -8,16 +8,16 @@
 
 # Blog App
 
-    * created index and home routes
-    * created blog model
-    * Added index routed and rendered the page
+  * created index and home routes
+  * created blog model
+  * Added index routed and rendered the page
 
 
 # Basic Layout
 
-    * Added headers and footer partials
-    * Use semantic UI
-    * Simple Nav Bar
+  * Added headers and footer partials
+  * Use semantic UI
+  * Simple Nav Bar
 
 
 # Putting C in crud
@@ -30,7 +30,25 @@
 
 # Show Pages Design
 
-  *Adding  a show route
+  * Adding  a show route
   * Adding show template
-  *Adding links
+  * Adding links
   * styling show page
+
+
+# Edit/Update
+
+    * Add Edit Route
+    * Add Edit form
+    * Add Update Route
+    * Add update Form
+    * Add method - override
+
+
+# Destroy Routes
+
+    * Delete a blog
+    * Redirect to some page
+
+
+
