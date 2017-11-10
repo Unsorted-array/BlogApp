@@ -6,21 +6,27 @@
   * All seven RESTFUL routes
 
 
-# Blog App
+## Blog App
 
+<<<<<<< HEAD
   * created index and home routes
   * created blog model
   * Added index routed and rendered the page
+=======
+   * Created index and home routes
+   * Created blog model
+   * Added index routed and rendered the page
+>>>>>>> 4bfbca6d09086a7c2fefcbaee46bc205c054ad1c
 
 
-# Basic Layout
+## Basic Layout
 
   * Added headers and footer partials
   * Use semantic UI
   * Simple Nav Bar
 
 
-# Putting C in crud
+## Putting C in crud
 
   * Adding a new route
   * Adding a new show template
@@ -28,7 +34,7 @@
   * Adding create template
 
 
-# Show Pages Design
+## Show Pages Design
 
   * Adding  a show route
   * Adding show template
